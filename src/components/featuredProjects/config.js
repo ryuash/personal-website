@@ -1,6 +1,6 @@
-import config from '@src/config'
+import config from '@src/config';
 
-const { links } = config
+const { links } = config;
 
 export const fakeProjectData = {
   title: 'Project A',
@@ -8,10 +8,10 @@ export const fakeProjectData = {
   links: [
     {
       type: 'github',
-      url: links.github
-    }
-  ]
-}
+      url: links.github,
+    },
+  ],
+};
 
 export const test = {
   title: 'Project A',
@@ -19,11 +19,11 @@ export const test = {
   links: [
     {
       type: 'github',
-      url: links.github
+      url: links.github,
     },
     {
       type: 'linkedIn',
-      url: links.linkedin
-    }
-  ]
-}
+      url: links.linkedin,
+    },
+  ],
+};

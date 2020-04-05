@@ -1,8 +1,13 @@
 import React from 'react';
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
 import { useSpring } from 'react-spring';
 import {
   SidebarCSS,
+  NavItemCSS,
 } from './styles';
+import {
+  navItems,
+} from './config';
 
 const Sidebar = (props) => {
   const {
@@ -16,7 +21,13 @@ const Sidebar = (props) => {
 
   return (
     <SidebarCSS style={{ width }}>
-      sidebar
+      {navItems.map((x) => (
+        <NavItemCSS key={x.to} onClick={toggle}>
+          <AnchorLink to={x.to}>
+            {x.display}
+          </AnchorLink>
+        </NavItemCSS>
+      ))}
     </SidebarCSS>
   );
 };

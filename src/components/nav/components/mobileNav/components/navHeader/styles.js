@@ -17,7 +17,7 @@ export const MobileNavHeaderCSS = styled.div`
   h2 {
     margin-bottom: 0;
     .color {
-      color: #979797;
+      color: ${colors.blue};
     }
   }
 `;

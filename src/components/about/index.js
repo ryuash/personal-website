@@ -1,17 +1,17 @@
-import React from 'react'
-import Title from '@components/title'
+import React from 'react';
+import Title from '@components/title';
 import {
   AboutCSS,
   AboutFlexContainerCSS,
   AboutDetailCSS,
-  AboutImageCSS
-} from './styles'
+  AboutImageCSS,
+} from './styles';
 
 const About = () => {
-  const tech = ['Javascript', 'Typescript', 'Python', 'React', 'Node', 'Firebase', 'Flask', 'Docker'].join(' - ')
+  const tech = ['Javascript', 'Typescript', 'Python', 'React', 'Node', 'Firebase', 'Flask', 'Docker'].join(' - ');
 
   return (
-    <AboutCSS>
+    <AboutCSS id="about">
       <Title title="About" color="blue" />
       <AboutFlexContainerCSS>
         <AboutImageCSS>
@@ -37,7 +37,7 @@ const About = () => {
         </AboutDetailCSS>
       </AboutFlexContainerCSS>
     </AboutCSS>
-  )
-}
+  );
+};
 
-export default About
+export default About;

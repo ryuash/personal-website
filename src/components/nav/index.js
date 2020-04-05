@@ -1,14 +1,12 @@
-import React from 'react'
-import MobileNav from './components/mobileNav'
-import DesktopNav from './components/desktopNav'
+import React from 'react';
+import MobileNav from './components/mobileNav';
+import DesktopNav from './components/desktopNav';
 
-const Nav = () => {
-  return (
-    <>
-      <MobileNav />
-      <DesktopNav />
-    </>
-  )
-}
+const Nav = () => (
+  <>
+    <MobileNav />
+    <DesktopNav />
+  </>
+);
 
-export default Nav
+export default Nav;

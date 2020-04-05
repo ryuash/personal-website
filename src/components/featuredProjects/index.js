@@ -11,7 +11,7 @@ import { fakeProjectData, test } from './config';
 const data = [fakeProjectData, test, fakeProjectData];
 
 const FeaturedProjects = () => (
-  <FeatureProjectsCSS>
+  <FeatureProjectsCSS id="projects">
     <Title title="Featured Projects" color="red" />
     <FeatureProjectsGridCSS>
       {data.map((x, i) => {
