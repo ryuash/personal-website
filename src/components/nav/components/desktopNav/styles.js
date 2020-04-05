@@ -31,6 +31,10 @@ export const DesktopNavCSS = styled.div`
     .nav-items {
       a {
         margin-left: 1.5rem;
+        transition: 0.3s;
+        &:hover {
+          color: ${colors.blue};
+        }
       }
     }
   `}

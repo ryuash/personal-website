@@ -14,8 +14,6 @@ const MobileNav = () => {
     toggle,
   } = useMobileNavHook();
 
-  console.log(isOpen, 'isopen');
-
   const overlayAnimation = useSpring({
     opacity: isOpen ? 0.7 : 0,
     display: isOpen ? 'block' : 'none',

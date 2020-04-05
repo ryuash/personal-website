@@ -4,7 +4,7 @@ const ghpages = require('gh-pages');
 ghpages.publish(
   'public',
   {
-    branch: 'gh-pages',
+    branch: 'master',
     repo: 'https://github.com/ryuash/ryuash.github.io.git',
   },
   () => {

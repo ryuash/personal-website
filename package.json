@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@formcarry/react": "^1.0.2",
     "babel-plugin-styled-components": "^1.10.7",
     "classnames": "^2.2.6",
     "gatsby": "^2.20.12",

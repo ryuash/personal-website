@@ -1,7 +1,7 @@
-import styled from 'styled-components'
-import { mixins, theme, media } from '@src/styles'
+import styled from 'styled-components';
+import { mixins, theme, media } from '@src/styles';
 
-const { colors, width } = theme
+const { colors, width } = theme;
 
 export const SingleProjectCSS = styled.div`
   ${mixins.dropShadow}
@@ -25,16 +25,16 @@ export const SingleProjectCSS = styled.div`
           position: relative;
           margin-bottom: 2rem;
         `
-      )
+      );
     }
-    return null
+    return null;
   }}
-`
+`;
 
 export const SingleProjectBackgroundCSS = styled.div`
   width: 100%;
   height: 125px;
-  background: ${(props) => { return `url(${props.background})` }};
+  background: ${(props) => `url(${props.background})`};
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -55,11 +55,11 @@ export const SingleProjectBackgroundCSS = styled.div`
             align-self: flex-start;
           `)}
         `
-      )
+      );
     }
-    return null
+    return null;
   }}
-`
+`;
 
 export const SingleProjectDetailContainerCSS = styled.div`
   padding: 1.5rem 1rem;
@@ -90,11 +90,11 @@ export const SingleProjectDetailContainerCSS = styled.div`
             margin-right: 15px;
           `)}
         `
-      )
+      );
     }
-    return null
+    return null;
   }}
-`
+`;
 
 export const SingleProjectTitleCSS = styled.h3`
   text-align: center;
@@ -114,11 +114,11 @@ export const SingleProjectTitleCSS = styled.h3`
 
           width: 100%;
         `
-      )
+      );
     }
-    return null
+    return null;
   }}
-`
+`;
 
 export const SingleProjectAboutCSS = styled.p`
   text-align: center;
@@ -138,11 +138,11 @@ export const SingleProjectAboutCSS = styled.p`
 
           width: 100%;
         `
-      )
+      );
     }
-    return null
+    return null;
   }}
-`
+`;
 
 export const SingleProjectSocialCSS = styled.div`
   width: 100%;
@@ -155,7 +155,7 @@ export const SingleProjectSocialCSS = styled.div`
     fill: ${colors.gray200};
 
     &:hover {
-      fill: ${colors.red};
+      fill: ${colors.blue};
     }
   }
 
@@ -171,8 +171,8 @@ export const SingleProjectSocialCSS = styled.div`
           justify-content: flex-end;
           `)}
         `
-      )
+      );
     }
-    return null
+    return null;
   }}
-`
+`;
