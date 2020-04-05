@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { media } from '@src/styles';
 
 export const LayoutCSS = styled.div`
   background: white;
@@ -10,8 +9,4 @@ export const LayoutCSS = styled.div`
   & > * {
     padding: 3rem 1.5rem;
   }
-
-  ${media.tablet`
-  margin-top: 0
-  `}
 `;

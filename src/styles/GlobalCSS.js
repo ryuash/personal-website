@@ -1,8 +1,8 @@
-import { createGlobalStyle } from 'styled-components'
-import { normalize } from 'styled-normalize'
-import { fontStyles, theme } from '@styles'
+import { createGlobalStyle } from 'styled-components';
+import { normalize } from 'styled-normalize';
+import { fontStyles, theme } from '@styles';
 
-const { fonts, colors } = theme
+const { fonts, colors } = theme;
 
 const GlobalCSS = createGlobalStyle`
   ${normalize}
@@ -52,6 +52,11 @@ const GlobalCSS = createGlobalStyle`
     width: 30px;
     margin: 0 5px;
   }
-`
 
-export default GlobalCSS
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+`;
+
+export default GlobalCSS;

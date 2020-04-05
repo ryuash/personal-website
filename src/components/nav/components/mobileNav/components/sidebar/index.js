@@ -7,7 +7,7 @@ import {
 } from './styles';
 import {
   navItems,
-} from './config';
+} from '../../../../config';
 
 const Sidebar = (props) => {
   const {
@@ -28,6 +28,15 @@ const Sidebar = (props) => {
           </AnchorLink>
         </NavItemCSS>
       ))}
+      <NavItemCSS>
+        <a
+          href="https://drive.google.com/file/d/1Azn2ydrWK5YURCfwLgBJuqXQZwWCe_cr/view"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Resume
+        </a>
+      </NavItemCSS>
     </SidebarCSS>
   );
 };

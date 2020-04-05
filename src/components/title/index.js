@@ -1,13 +1,13 @@
-import React from 'react'
+import React from 'react';
 import {
-  TitleCSS
-} from './styles'
+  TitleCSS,
+} from './styles';
 
 const Title = (props) => {
   const {
     title,
-    color
-  } = props
+    color,
+  } = props;
 
   return (
     <TitleCSS color={color}>
@@ -18,7 +18,7 @@ const Title = (props) => {
       </span>
       /&gt;
     </TitleCSS>
-  )
-}
+  );
+};
 
-export default Title
+export default Title;

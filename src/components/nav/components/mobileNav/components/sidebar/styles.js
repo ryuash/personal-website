@@ -17,6 +17,5 @@ export const NavItemCSS = styled.div`
   font-size: 1.1rem;
   a {
     color: #949494;
-    text-decoration: none;
   }
 `;

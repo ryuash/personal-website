@@ -1,13 +1,13 @@
-import styled from 'styled-components'
-import { theme } from '@src/styles'
+import styled from 'styled-components';
+import { theme } from '@src/styles';
 
-const { colors } = theme
+const { colors } = theme;
 
 export const TitleCSS = styled.h2`
   text-align: center;
 
   span {
-    color: ${(props) => { return colors[props.color] }};
+    color: ${(props) => colors[props.color]};
   }
 
-`
+`;
