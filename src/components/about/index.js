@@ -15,7 +15,7 @@ const About = () => {
       <Title title="About" color="blue" />
       <AboutFlexContainerCSS>
         <AboutImageCSS>
-          <img src="https://source.unsplash.com/user/erondu/1600x900" alt="about" />
+          <img src="./profileA.png" alt="about" />
           <div id="image-decorator" />
         </AboutImageCSS>
         <AboutDetailCSS>

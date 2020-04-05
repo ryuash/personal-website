@@ -18,7 +18,7 @@ const DesktopNav = () => (
           {x.display}
         </AnchorLink>
       ))}
-      <a href="https://drive.google.com/file/d/1Azn2ydrWK5YURCfwLgBJuqXQZwWCe_cr/view" rel="noopener noreferrer" target="_blank">Resume</a>
+      <a href="./wingmanlee-resume-2020.pdf" rel="noopener noreferrer" target="_blank">Resume</a>
     </div>
   </DesktopNavCSS>
 );

@@ -156,7 +156,7 @@ export const SingleProjectSocialCSS = styled.div`
     width: 25px;
 
     &:hover {
-      fill: ${colors.blue};
+      fill: ${colors.red};
     }
   }
 

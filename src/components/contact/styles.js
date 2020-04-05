@@ -58,14 +58,18 @@ export const ContactFormCSS = styled.form`
   button {
     width: 100%;
     background: ${colors.red};
+    border: solid 1px ${colors.red};
     padding: 1rem;
     color: white;
     margin-top: 1.5rem;
-    border: none;
     border-radius: 3px;
+    transition: 0.3s;
 
     &:hover {
       cursor: pointer;
+      border: solid 1px ${colors.red};
+      background: transparent;
+      color: ${colors.red};
     }
   }
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
 import {
   MobileNavHeaderCSS,
   MobileNavIconCSS,
@@ -18,11 +19,13 @@ const NavHeader = (props) => {
       >
         <div />
       </MobileNavIconCSS>
-      <h2>
-        &lt;
-        <span className="color">Wingman</span>
-        &nbsp;/&gt;
-      </h2>
+      <AnchorLink to="/#home">
+        <h2>
+          &lt;
+          <span className="color">Wingman</span>
+          &nbsp;/&gt;
+        </h2>
+      </AnchorLink>
     </MobileNavHeaderCSS>
   );
 };

@@ -1,26 +1,39 @@
-import React from 'react'
+import React from 'react';
 import {
   GithubIcon,
-  LinkedInIcon
-} from '@icons'
+  LinkedInIcon,
+} from '@icons';
+import config from '@src/config';
 import {
   FooterCSS,
   FooterDetails,
-  FooterSocialCSS
-} from './styles'
+  FooterSocialCSS,
+} from './styles';
 
-const Footer = () => {
-  return (
-    <FooterCSS>
-      <FooterSocialCSS>
+const { links } = config;
+
+const Footer = () => (
+  <FooterCSS>
+    <FooterSocialCSS>
+      <a
+        href={links.github}
+        target="_blank"
+        rel="nofollow noopener noreferrer"
+      >
         <GithubIcon />
+      </a>
+      <a
+        href={links.linkedin}
+        target="_blank"
+        rel="nofollow noopener noreferrer"
+      >
         <LinkedInIcon />
-      </FooterSocialCSS>
-      <FooterDetails>
-        Designed and built by Wingman Lee
-      </FooterDetails>
-    </FooterCSS>
-  )
-}
+      </a>
+    </FooterSocialCSS>
+    <FooterDetails>
+      Designed and built by Wingman Lee
+    </FooterDetails>
+  </FooterCSS>
+);
 
-export default Footer
+export default Footer;

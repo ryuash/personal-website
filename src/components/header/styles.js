@@ -51,7 +51,7 @@ export const HeaderSocialCSS = styled.div`
     fill: white;
 
     &:hover {
-      fill: ${colors.red};
+      fill: ${colors.yellow};
     }
   }
 `;

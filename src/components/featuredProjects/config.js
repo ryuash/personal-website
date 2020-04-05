@@ -1,14 +1,3 @@
-export const fakeProjectData = {
-  title: 'Uprise Admin Dashboard',
-  about: 'Helped developed during my time at Uprise. The platform was created for internal use and data storing.',
-  links: [
-    {
-      type: 'github',
-      url: 'https://github.com/guava-jay/capstone',
-    },
-  ],
-};
-
 export const test = {
   title: 'Stackbox',
   background: './stackbox.png',

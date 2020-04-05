@@ -7,8 +7,7 @@ export const DesktopNavCSS = styled.div`
   ${mixins.dropShadow}
   display: none;
   ${media.tablet`
-    // border-top: solid 5px ${colors.red};
-    padding: 1.3rem 1rem;
+    padding: 1.3rem;
     position: fixed;
     height: 75px;
     background: white;
@@ -25,7 +24,8 @@ export const DesktopNavCSS = styled.div`
       margin-bottom: 0;
 
       .color {
-        color: ${colors.blue};
+        // color: ${colors.blue};
+        color: #a8aeaf;
       }
     }
 
@@ -34,7 +34,7 @@ export const DesktopNavCSS = styled.div`
         margin-left: 1.5rem;
         transition: 0.3s;
         &:hover {
-          color: ${colors.blue};
+          color: ${colors.red};
         }
       }
     }
