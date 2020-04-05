@@ -123,7 +123,7 @@ export const SingleProjectTitleCSS = styled.h3`
 export const SingleProjectAboutCSS = styled.p`
   text-align: center;
   margin-bottom: 1.5rem;
-
+  color: ${(props) => (props.color ? '#C9C9C9' : 'inherit')};
   ${(props) => {
     if (props.featured) {
       return (
@@ -153,6 +153,7 @@ export const SingleProjectSocialCSS = styled.div`
   svg {
     ${mixins.hoverTransition}
     fill: ${colors.gray200};
+    width: 25px;
 
     &:hover {
       fill: ${colors.blue};

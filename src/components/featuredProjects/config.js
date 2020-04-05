@@ -1,29 +1,73 @@
-import config from '@src/config';
-
-const { links } = config;
-
 export const fakeProjectData = {
-  title: 'Project A',
-  about: 'Quisque sed dictum ligula. Nulla augue elit, ultrices sed sagittis sed, hendrerit dapibus urna. Donec rhoncus pellentesque commodo. Cras posuere enim ipsum, eget volutpat ex accumsan sed.',
+  title: 'Uprise Admin Dashboard',
+  about: 'Helped developed during my time at Uprise. The platform was created for internal use and data storing.',
   links: [
     {
       type: 'github',
-      url: links.github,
+      url: 'https://github.com/guava-jay/capstone',
     },
   ],
 };
 
 export const test = {
-  title: 'Project A',
-  about: 'ipiscing elit. Vestibulum quis pharetra elit. Vivamus a justo quis mauris volutpat ultricies nec vitae urna. Donec libero felis, elementum id ullamcorper sit amet, iaculis sit amet neque. Integer congue id enim eget auctor. Mauris iaculis nisi id fermentum laoreet. Etiam quis scelerisque lorem, non ornare arcu. Curabitur maximus, orci in auctor bibendum, elit ante dapibus turpis, vitae dictum massa arcu vel nulla. Maecenas quis lorem non orci venenatis ultricies. Aenean cursus justo non pharetra iaculis. Nullam luctus, diam et maximus imperdiet, dui enim aliquet est, sed vehicula elit urna eget lectus. Integer sit amet libero dignissim nulla sollicitudin suscipit. Vestibulum pellentesque risus eu turpis imperdiet malesuada.',
+  title: 'Stackbox',
+  background: './stackbox.png',
+  about: 'A spinoff of the popular Jackbox party games developed by Jackbox Games. Stackbox is a multiplayer collaborative project with several games designed to be played with one device acting as a host, and up to four players on their personal devices. Stackbox utilizes Google’s real-time Firebase for real-time interactivity',
+  skills: ['React', 'Redux', 'Recharts', 'Express', 'Firebase', 'Mocha', 'Chai'],
   links: [
     {
       type: 'github',
-      url: links.github,
+      url: 'https://github.com/guava-jay/capstone',
     },
     {
-      type: 'linkedIn',
-      url: links.linkedin,
+      type: 'external',
+      url: 'https://stackbox.herokuapp.com/',
     },
   ],
 };
+
+export const projects = [
+  {
+    title: 'Uprise Merchant App',
+    background: './uprise-merchant.png',
+    about: 'Uprise Merchant App is the merchant facing part of the loan platform designed and developed with the tech team during my time at Uprise. Some features I imeplemented were merchant team integrations, user attempt lockouts and OAuth integrations with Stripe and Paypal.',
+    links: [
+      {
+        type: 'external',
+        url: 'https://app.uprise.hk/',
+      },
+    ],
+  },
+  {
+    title: 'Stackbox',
+    background: './stackbox.png',
+    about: 'A spinoff of the popular Jackbox party games developed by Jackbox Games. Stackbox is a multiplayer collaborative project with several games designed to be played with one device acting as a host, and up to four players on their personal devices. Stackbox utilizes Google’s real-time Firebase for real-time interactivity',
+    skills: ['React', 'Redux', 'Recharts', 'Express', 'Firebase', 'Mocha', 'Chai'],
+    links: [
+      {
+        type: 'github',
+        url: 'https://github.com/guava-jay/capstone',
+      },
+      {
+        type: 'external',
+        url: 'https://stackbox.herokuapp.com/',
+      },
+    ],
+  },
+  {
+    title: 'Pluto Games',
+    background: './pluto-games.png',
+    about: 'Pluto Games was an e-commerce collaborative project focused on the games market. Some features that I implemented were Stripe integration, search querys and backend testing using mocha and chai',
+    skills: ['React', 'Redux', 'Express', 'Sequelize', 'Mocha', 'Chai'],
+    links: [
+      {
+        type: 'github',
+        url: 'https://github.com/Goat-Pluto-Shopper/pluto-games',
+      },
+      {
+        type: 'external',
+        url: 'https://pluto-games.herokuapp.com/',
+      },
+    ],
+  },
+];

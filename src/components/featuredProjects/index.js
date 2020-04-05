@@ -6,9 +6,7 @@ import {
   FeatureProjectsGridCSS,
   FeatureProjectSingleGridCSS,
 } from './styles';
-import { fakeProjectData, test } from './config';
-
-const data = [fakeProjectData, test, fakeProjectData];
+import { projects as data } from './config';
 
 const FeaturedProjects = () => (
   <FeatureProjectsCSS id="projects">
@@ -27,7 +25,6 @@ const FeaturedProjects = () => (
               featured
               isOdd={isOdd}
             />
-            {/* <hr /> */}
           </FeatureProjectSingleGridCSS>
         );
       })}

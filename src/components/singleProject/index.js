@@ -1,44 +1,50 @@
-import React from 'react'
+import React from 'react';
 import {
   LinkedInIcon,
-  GithubIcon
-} from '@src/components/Icons'
+  GithubIcon,
+  ExternalIcon,
+} from '@src/components/Icons';
 import {
   SingleProjectCSS,
   SingleProjectBackgroundCSS,
   SingleProjectTitleCSS,
   SingleProjectAboutCSS,
   SingleProjectDetailContainerCSS,
-  SingleProjectSocialCSS
-} from './styles'
+  SingleProjectSocialCSS,
+} from './styles';
 
 
 const SingleProject = (props) => {
   const {
     data,
     featured = false,
-    isOdd = false
-  } = props
+    isOdd = false,
+  } = props;
 
   const {
     title = '',
     about = '',
     background = 'https://source.unsplash.com/user/erondu/1600x900',
-    links = []
-  } = data
+    links = [],
+    skills = [],
+  } = data;
+  const skillsUsed = skills.join(' - ');
 
   const renderIcon = (type) => {
     switch (type) {
       case 'github': {
-        return <GithubIcon />
+        return <GithubIcon />;
       }
       case 'linkedIn': {
-        return <LinkedInIcon />
+        return <LinkedInIcon />;
+      }
+      case 'external': {
+        return <ExternalIcon />;
       }
       default:
-        return null
+        return null;
     }
-  }
+  };
 
   return (
     <SingleProjectCSS featured={featured} isOdd={isOdd}>
@@ -63,12 +69,19 @@ const SingleProject = (props) => {
         >
           {about}
         </SingleProjectAboutCSS>
+        <SingleProjectAboutCSS
+          color
+          featured={featured}
+          isOdd={isOdd}
+        >
+          {skillsUsed}
+        </SingleProjectAboutCSS>
         <SingleProjectSocialCSS
           featured={featured}
           isOdd={isOdd}
         >
           {links.map((link) => {
-            const { url, type } = link
+            const { url, type } = link;
             return (
               <a
                 key={url}
@@ -78,12 +91,12 @@ const SingleProject = (props) => {
               >
                 {renderIcon(type)}
               </a>
-            )
+            );
           })}
         </SingleProjectSocialCSS>
       </SingleProjectDetailContainerCSS>
     </SingleProjectCSS>
-  )
-}
+  );
+};
 
-export default SingleProject
+export default SingleProject;

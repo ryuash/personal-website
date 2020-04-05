@@ -5,7 +5,7 @@ const { colors } = theme;
 
 export const HeaderCSS = styled.div`
   ${mixins.flexCenter};
-  background: url('./Web 1920 – 2.png');
+  background: url('./coverA.png');
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 75vh;
@@ -15,6 +15,7 @@ export const HeaderCSS = styled.div`
   ${media.tablet`
     align-items: flex-start;
     text-align: left;
+    padding-left: 4rem;
   `}
 `;
 

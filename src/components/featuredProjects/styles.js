@@ -39,16 +39,4 @@ export const FeatureProjectsGridCSS = styled.div`
   ${media.tablet`
     grid-gap: 20px;
   `}
-
-  // hr {
-  //   width: calc(100vw + 2rem);
-  //   left: -2.5rem;
-  //   right: -2.5rem;
-  //   position: absolute;
-  //   border: none;
-  //   border-top: 4px dashed;
-  //   border-color: ${colors.red};
-  //   z-index: -1;
-  //   top: 60%;
-  // }
 `;

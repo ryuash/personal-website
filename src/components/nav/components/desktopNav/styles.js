@@ -1,15 +1,16 @@
 import styled from 'styled-components';
-import { media, theme } from '@src/styles';
+import { media, theme, mixins } from '@src/styles';
 
 const { colors } = theme;
 
 export const DesktopNavCSS = styled.div`
+  ${mixins.dropShadow}
   display: none;
   ${media.tablet`
-    border-top: solid 4px ${colors.blue};
+    // border-top: solid 5px ${colors.red};
     padding: 1.3rem 1rem;
     position: fixed;
-    height: 50px;
+    height: 75px;
     background: white;
     width: 100%;
     top: 0;
