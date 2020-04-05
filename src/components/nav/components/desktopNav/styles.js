@@ -24,7 +24,6 @@ export const DesktopNavCSS = styled.div`
       margin-bottom: 0;
 
       .color {
-        // color: ${colors.blue};
         color: #a8aeaf;
       }
     }

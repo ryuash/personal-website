@@ -1,7 +1,4 @@
-import { css } from 'styled-components'
-// import { theme } from '@styles'
-
-// const { colors } = theme
+import { css } from 'styled-components';
 
 const mixins = {
   flexCenter: css`
@@ -29,7 +26,7 @@ const mixins = {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-  `
-}
+  `,
+};
 
-export default mixins
+export default mixins;
