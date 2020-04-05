@@ -1,19 +1,24 @@
-import React from 'react'
+import React from 'react';
+import { useSpring } from 'react-spring';
 import {
-  SidebarCSS
-} from './styles'
+  SidebarCSS,
+} from './styles';
 
 const Sidebar = (props) => {
   const {
-    isOpen,
-    toggle
-  } = props
-  // need to set up toggle animation
+    isOpen = false,
+    toggle,
+  } = props;
+
+  const { width } = useSpring({
+    width: isOpen ? 230 : 0,
+  });
+
   return (
-    <SidebarCSS>
+    <SidebarCSS style={{ width }}>
       sidebar
     </SidebarCSS>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;

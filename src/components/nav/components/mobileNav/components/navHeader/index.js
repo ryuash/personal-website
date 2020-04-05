@@ -1,14 +1,14 @@
-import React from 'react'
+import React from 'react';
 import {
   MobileNavHeaderCSS,
-  MobileNavIconCSS
-} from './styles'
+  MobileNavIconCSS,
+} from './styles';
 
 const NavHeader = (props) => {
   const {
     isOpen,
-    toggle
-  } = props
+    toggle,
+  } = props;
 
   return (
     <MobileNavHeaderCSS>
@@ -19,10 +19,12 @@ const NavHeader = (props) => {
         <div />
       </MobileNavIconCSS>
       <h2>
-        &lt;Wingman&nbsp;/&gt;
+        &lt;
+        <span className="color">Wingman</span>
+        &nbsp;/&gt;
       </h2>
     </MobileNavHeaderCSS>
-  )
-}
+  );
+};
 
-export default NavHeader
+export default NavHeader;

@@ -1,14 +1,14 @@
-import { useState } from 'react'
+import { useState } from 'react';
 
 export const useMobileNavHook = () => {
-  const [isOpen, toggleOpen] = useState(false)
+  const [isOpen, toggleOpen] = useState(false);
 
   const toggle = () => {
-    toggleOpen(!isOpen)
-  }
+    toggleOpen(!isOpen);
+  };
 
   return {
     isOpen,
-    toggle
-  }
-}
+    toggle,
+  };
+};

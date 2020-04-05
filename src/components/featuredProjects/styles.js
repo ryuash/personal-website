@@ -1,7 +1,7 @@
-import styled from 'styled-components'
-import { theme, media } from '@src/styles'
+import styled from 'styled-components';
+import { theme, media } from '@src/styles';
 
-const { colors } = theme
+const { colors } = theme;
 
 export const FeatureProjectsCSS = styled.div`
   overflow: hidden;
@@ -9,7 +9,7 @@ export const FeatureProjectsCSS = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-`
+`;
 
 export const FeatureProjectSingleGridCSS = styled.div`
   position: relative;
@@ -26,10 +26,10 @@ export const FeatureProjectSingleGridCSS = styled.div`
     position: absolute;
     top: 60%;
     transform-origin: 80%;
-    transform: ${(props) => { return (props.isOdd ? 'rotate(-5deg)' : 'rotate(5deg)') }};
+    transform: ${(props) => (props.isOdd ? 'rotate(-5deg)' : 'rotate(5deg)')};
     z-index: -1;
   }
-`
+`;
 
 export const FeatureProjectsGridCSS = styled.div`
   display: grid;
@@ -51,4 +51,4 @@ export const FeatureProjectsGridCSS = styled.div`
   //   z-index: -1;
   //   top: 60%;
   // }
-`
+`;

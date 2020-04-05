@@ -1,7 +1,7 @@
-import styled from 'styled-components'
-import { theme } from '@src/styles'
+import styled from 'styled-components';
+import { theme } from '@src/styles';
 
-const { colors } = theme
+const { colors } = theme;
 
 export const MobileNavHeaderCSS = styled.div`
   width: 100%;
@@ -16,8 +16,11 @@ export const MobileNavHeaderCSS = styled.div`
 
   h2 {
     margin-bottom: 0;
+    .color {
+      color: #979797;
+    }
   }
-`
+`;
 
 export const MobileNavIconCSS = styled.div`
   width: 27px;
@@ -36,9 +39,8 @@ export const MobileNavIconCSS = styled.div`
     transition: all .4s ease-in-out;
   }
 
-  ${(props) => {
-    return (props.isOpen ? (
-      `
+  ${(props) => (props.isOpen ? (
+    `
         &:before {
           transform: translateY(7px) rotate(137deg)
         }
@@ -51,6 +53,5 @@ export const MobileNavIconCSS = styled.div`
           transform: scale(0)
         }
       `
-    ) : '')
-  }}
-`
+  ) : '')}
+`;

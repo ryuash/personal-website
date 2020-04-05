@@ -1,17 +1,17 @@
-import styled from 'styled-components'
-import { theme, mixins } from '@src/styles'
+import styled from 'styled-components';
+import { theme, mixins } from '@src/styles';
 
-const { colors } = theme
+const { colors } = theme;
 
 export const FooterCSS = styled.div`
   background: ${colors.dark};
-`
+`;
 
 export const FooterDetails = styled.p`
   text-align: center;
   color: ${colors.blue};
   font-size: 0.8rem;
-`
+`;
 
 export const FooterSocialCSS = styled.div`
   display: flex;
@@ -26,4 +26,4 @@ export const FooterSocialCSS = styled.div`
       fill: ${colors.yellow};
     }
   }
-`
+`;
