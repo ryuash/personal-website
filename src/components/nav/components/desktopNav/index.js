@@ -14,7 +14,7 @@ const DesktopNav = () => (
     </AnchorLink>
     <div className="nav-items">
       {navItems.map((x) => (
-        <AnchorLink to={x.to}>
+        <AnchorLink to={x.to} key={x.to}>
           {x.display}
         </AnchorLink>
       ))}

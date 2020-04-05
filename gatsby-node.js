@@ -5,7 +5,7 @@
  */
 
 // You can delete this file if you're not using it
-const path = require('path')
+const path = require('path');
 
 exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
@@ -15,8 +15,9 @@ exports.onCreateWebpackConfig = ({ actions }) => {
         '@styles': path.resolve(__dirname, 'src/styles'),
         '@components': path.resolve(__dirname, 'src/components'),
         '@icons': path.resolve(__dirname, 'src/components/Icons'),
-        '@fonts': path.resolve(__dirname, 'src/styles/font_files')
-      }
-    }
-  })
-}
+        '@fonts': path.resolve(__dirname, 'src/styles/font_files'),
+        '@static': path.resolve(__dirname, 'static'),
+      },
+    },
+  });
+};
