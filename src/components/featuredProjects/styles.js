@@ -21,7 +21,6 @@ export const FeatureProjectSingleGridCSS = styled.div`
     width: 300vw;
     margin-left: -200vw;
     margin-right: -200vw;
-    background-image: url("data:image/svg+xml, %3Csvg width='345' height='20' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Cline stroke='%23EB655D'%0Astroke-dasharray='10, 5' x1='0' y1='1' x2='600' y2='1' style='stroke-width: 2px;'%3E%3C/line%3E%3C/svg%3E");
     background-repeat: repeat-x;
     position: absolute;
     top: 60%;

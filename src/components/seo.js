@@ -35,7 +35,7 @@ function SEO({
         lang,
       }}
       title={title}
-      titleTemplate="Wingman Lee"
+      titleTemplate="Wingman's Portfolio"
       meta={[
         {
           name: 'description',

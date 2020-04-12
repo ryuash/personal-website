@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   LinkedInIcon,
   GithubIcon,
@@ -15,6 +15,7 @@ import {
 
 
 const SingleProject = (props) => {
+  const [hover, setHover] = useState(false);
   const {
     data,
     featured = false,
@@ -46,16 +47,29 @@ const SingleProject = (props) => {
     }
   };
 
+  const hoverOn = () => {
+    setHover(true);
+  };
+
+  const hoverOff = () => {
+    setHover(false);
+  };
+
   return (
     <SingleProjectCSS featured={featured} isOdd={isOdd}>
       <SingleProjectBackgroundCSS
         background={background}
         featured={featured}
+        onMouseEnter={hoverOn}
+        onMouseLeave={hoverOff}
         isOdd={isOdd}
+        hover={hover}
       />
       <SingleProjectDetailContainerCSS
         featured={featured}
         isOdd={isOdd}
+        onMouseEnter={hoverOn}
+        onMouseLeave={hoverOff}
       >
         <SingleProjectTitleCSS
           featured={featured}
@@ -70,7 +84,7 @@ const SingleProject = (props) => {
           {about}
         </SingleProjectAboutCSS>
         <SingleProjectAboutCSS
-          color
+          color="true"
           featured={featured}
           isOdd={isOdd}
         >
@@ -81,13 +95,14 @@ const SingleProject = (props) => {
           isOdd={isOdd}
         >
           {links.map((link) => {
-            const { url, type } = link;
+            const { url, type, description = type } = link;
             return (
               <a
                 key={url}
                 href={url}
                 target="_blank"
                 rel="nofollow noopener noreferrer"
+                title={description}
               >
                 {renderIcon(type)}
               </a>

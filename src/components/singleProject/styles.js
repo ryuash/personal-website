@@ -46,7 +46,9 @@ export const SingleProjectBackgroundCSS = styled.div`
           width: 65%;
           height: 300px;
           border-radius: 0;
-
+          filter: ${props.hover ? 'none' : 'grayscale(100%)'};
+          transition: 0.2s;
+          border: 1px solid #f1f1f1;
           ${props.isOdd && (`
             align-self: flex-end;
           `)}
@@ -67,6 +69,7 @@ export const SingleProjectDetailContainerCSS = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 5;
 
   ${(props) => {
     if (props.featured) {
@@ -123,7 +126,7 @@ export const SingleProjectTitleCSS = styled.h3`
 export const SingleProjectAboutCSS = styled.p`
   text-align: center;
   margin-bottom: 1.5rem;
-  color: ${(props) => (props.color ? '#C9C9C9' : 'inherit')};
+  color: ${(props) => (props.color === 'true' ? '#C9C9C9' : 'inherit')};
   ${(props) => {
     if (props.featured) {
       return (
