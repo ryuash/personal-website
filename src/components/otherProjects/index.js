@@ -7,13 +7,11 @@ import {
   OtherProjectsGridCSS,
 } from './styles';
 
-const OtherProjects = () => {
-  console.log('hi');
-  return (
-    <OtherProjectsCSS>
-      <Title title="Other Projects" color="yellow" />
-      <OtherProjectsGridCSS>
-        {
+const OtherProjects = () => (
+  <OtherProjectsCSS>
+    <Title title="Other Projects" color="yellow" />
+    <OtherProjectsGridCSS>
+      {
           projects.map((project, index) => (
             <SingleProject
               key={index}
@@ -21,9 +19,8 @@ const OtherProjects = () => {
             />
           ))
         }
-      </OtherProjectsGridCSS>
-    </OtherProjectsCSS>
-  );
-};
+    </OtherProjectsGridCSS>
+  </OtherProjectsCSS>
+);
 
 export default OtherProjects;
