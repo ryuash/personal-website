@@ -6,6 +6,7 @@ const { colors } = theme;
 export const DesktopNavCSS = styled.div`
   ${mixins.dropShadow}
   display: none;
+
   ${media.tablet`
     padding: 1.3rem;
     position: fixed;

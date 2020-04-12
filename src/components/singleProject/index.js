@@ -11,6 +11,7 @@ import {
   SingleProjectAboutCSS,
   SingleProjectDetailContainerCSS,
   SingleProjectSocialCSS,
+  FlexEndCSS,
 } from './styles';
 
 
@@ -83,32 +84,34 @@ const SingleProject = (props) => {
         >
           {about}
         </SingleProjectAboutCSS>
-        <SingleProjectAboutCSS
-          color="true"
-          featured={featured}
-          isOdd={isOdd}
-        >
-          {skillsUsed}
-        </SingleProjectAboutCSS>
-        <SingleProjectSocialCSS
-          featured={featured}
-          isOdd={isOdd}
-        >
-          {links.map((link) => {
-            const { url, type, description = type } = link;
-            return (
-              <a
-                key={url}
-                href={url}
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                title={description}
-              >
-                {renderIcon(type)}
-              </a>
-            );
-          })}
-        </SingleProjectSocialCSS>
+        <FlexEndCSS>
+          <SingleProjectAboutCSS
+            color="true"
+            featured={featured}
+            isOdd={isOdd}
+          >
+            {skillsUsed}
+          </SingleProjectAboutCSS>
+          <SingleProjectSocialCSS
+            featured={featured}
+            isOdd={isOdd}
+          >
+            {links.map((link) => {
+              const { url, type, description = type } = link;
+              return (
+                <a
+                  key={url}
+                  href={url}
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  title={description}
+                >
+                  {renderIcon(type)}
+                </a>
+              );
+            })}
+          </SingleProjectSocialCSS>
+        </FlexEndCSS>
       </SingleProjectDetailContainerCSS>
     </SingleProjectCSS>
   );

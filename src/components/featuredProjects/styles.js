@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 import { theme, media } from '@src/styles';
 
-const { colors } = theme;
-
 export const FeatureProjectsCSS = styled.div`
   overflow: hidden;
   display: flex;

@@ -9,6 +9,8 @@ export const SingleProjectCSS = styled.div`
   border-radius: 10px;
   overflow: hidden;
   background: white;
+  display: flex;
+  flex-direction: column;
 
   ${(props) => {
     if (props.featured) {
@@ -38,7 +40,7 @@ export const SingleProjectBackgroundCSS = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-
+  
   ${(props) => {
     if (props.featured) {
       return (
@@ -68,8 +70,8 @@ export const SingleProjectDetailContainerCSS = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   z-index: 5;
+  flex: 1;
 
   ${(props) => {
     if (props.featured) {
@@ -179,4 +181,12 @@ export const SingleProjectSocialCSS = styled.div`
     }
     return null;
   }}
+`;
+
+export const FlexEndCSS = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex: 1;
 `;
