@@ -17,6 +17,15 @@ export const HeaderCSS = styled.div`
     text-align: left;
     padding-left: 4rem;
   `}
+
+  ${media.bigDesktop`
+    position: fixed;
+    width: 25%;
+    height: 100vh;
+    padding: 2rem;
+    margin-top: -75px;
+    background-position: 81%;
+  `}
 `;
 
 export const HeaderTitleCSS = styled.h1`
@@ -42,6 +51,10 @@ export const HeaderDetailsCSS = styled.p`
     font-weight: 300;
     width: 500px;
     margin-bottom: 1rem;
+  `}
+
+  ${media.bigDesktop`
+    width: auto;
   `}
 `;
 

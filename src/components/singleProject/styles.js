@@ -31,6 +31,16 @@ export const SingleProjectCSS = styled.div`
     }
     return null;
   }}
+  ${(props) => {
+    if (props.featured) {
+      return (
+        media.bigDesktop`
+          max-width: ${width.bigDesktopMaxWidth};
+        `
+      );
+    }
+    return null;
+  }}
 `;
 
 export const SingleProjectBackgroundCSS = styled.div`
@@ -40,7 +50,7 @@ export const SingleProjectBackgroundCSS = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  
+
   ${(props) => {
     if (props.featured) {
       return (

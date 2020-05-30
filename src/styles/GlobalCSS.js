@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 import { normalize } from 'styled-normalize';
-import { fontStyles, theme } from '@styles';
+import { fontStyles, theme, media } from '@styles';
+import { sizes } from './media';
 
 const { fonts, colors } = theme;
 

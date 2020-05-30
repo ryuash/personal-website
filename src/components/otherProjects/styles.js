@@ -18,4 +18,8 @@ export const OtherProjectsGridCSS = styled.div`
     grid-template-columns: repeat(3, 1fr);
     max-width: ${width.maxWidth};
   `}
+
+  ${media.bigDesktop`
+    max-width: ${width.bigDesktopMaxWidth};
+  `}
 `;

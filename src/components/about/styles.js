@@ -1,7 +1,7 @@
-import styled from 'styled-components'
-import { theme, mixins, media } from '@src/styles'
+import styled from 'styled-components';
+import { theme, mixins, media } from '@src/styles';
 
-const { colors, width } = theme
+const { colors, width } = theme;
 
 export const AboutCSS = styled.div`
   ${media.tablet`
@@ -10,7 +10,7 @@ export const AboutCSS = styled.div`
     justify-content: center;
     flex-direction: column;
   `}
-`
+`;
 
 export const AboutFlexContainerCSS = styled.div`
   ${mixins.flexCenter}
@@ -23,7 +23,11 @@ export const AboutFlexContainerCSS = styled.div`
     align-items: flex-start;
   `}
 
-`
+  ${media.bigDesktop`
+    max-width: ${width.bigDesktopMaxWidth};
+  `}
+
+`;
 
 export const AboutDetailCSS = styled.div`
   text-align: center;
@@ -40,7 +44,7 @@ export const AboutDetailCSS = styled.div`
     flex: 1;
     text-align: left;
   `}
-`
+`;
 
 export const AboutImageCSS = styled.div`
   img {
@@ -72,4 +76,4 @@ export const AboutImageCSS = styled.div`
       border: 2px dashed ${colors.yellow};
     }
   `}
-`
+`;

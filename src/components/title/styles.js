@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { theme } from '@src/styles';
+import { theme, media } from '@src/styles';
 
 const { colors } = theme;
 
@@ -10,4 +10,9 @@ export const TitleCSS = styled.h2`
     color: ${(props) => colors[props.color]};
   }
 
+  ${media.bigDesktop`
+      width: 100%;
+      text-align: right;
+      margin-bottom: 3rem;
+  `}
 `;

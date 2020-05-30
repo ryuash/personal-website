@@ -14,4 +14,19 @@ export const LayoutCSS = styled.div`
   ${media.tablet`
     margin-top: 75px;
   `}
+
+  ${media.bigDesktop`
+    padding-left: 25%;
+    padding-bottom: 5rem;
+
+    & > * {
+      padding: 3rem 2rem 3rem 1rem;
+    }
+  `}
+`;
+
+export const BodyWrapperCSS = styled.div`
+  ${media.desktop`
+      // display: flex;
+  `}
 `;

@@ -1,10 +1,13 @@
 import styled from 'styled-components';
-import { theme, mixins } from '@src/styles';
+import { theme, mixins, media } from '@src/styles';
 
 const { colors } = theme;
 
 export const FooterCSS = styled.div`
   background: ${colors.dark};
+  ${media.bigDesktop`
+    display: none;
+  `}
 `;
 
 export const FooterDetails = styled.p`

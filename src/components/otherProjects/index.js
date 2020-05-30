@@ -9,7 +9,7 @@ import {
 
 const OtherProjects = () => (
   <OtherProjectsCSS>
-    <Title title="Other Projects" color="yellow" />
+    <Title title="Other Projects" color="darkYellow" />
     <OtherProjectsGridCSS>
       {
           projects.map((project, index) => (

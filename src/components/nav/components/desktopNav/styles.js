@@ -39,4 +39,12 @@ export const DesktopNavCSS = styled.div`
       }
     }
   `}
+
+  ${media.bigDesktop`
+    width: 75%;
+    margin-left: 25%;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  `}
 `;

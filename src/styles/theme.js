@@ -5,16 +5,18 @@ const theme = {
     yellow: '#FFEE6A',
     font: '#50535C',
     dark: '#1F1F22',
-    gray200: '#c7c7d3'
+    gray200: '#c7c7d3',
+    darkYellow: '#efdc49',
   },
   width: {
-    maxWidth: '1024px'
+    maxWidth: '1024px',
+    bigDesktopMaxWidth: '85%',
   },
   fonts: {
     openSans: 'Open Sans, Roboto, Helvetica Neue, Segoe UI, Arial, sans-serif',
     robotoMono: 'Roboto Mono, Monaco, monospace',
-    lato: 'Lato, Roboto, Monaco, monospace'
-  }
-}
+    lato: 'Lato, Roboto, Monaco, monospace',
+  },
+};
 
-export default theme
+export default theme;
